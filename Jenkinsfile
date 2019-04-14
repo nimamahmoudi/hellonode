@@ -35,6 +35,6 @@ node {
             sh "docker rmi ${app.imageName()}:latest"
         }
         sh "docker rmi ${app.imageName()}:latest"
-        sh "docker rmi $(sudo docker images -f \"dangling=true\" -q)"
+        //sh "docker rmi $(sudo docker images -f \"dangling=true\" -q)"
     }
 }
