@@ -34,5 +34,7 @@ node {
             sh "docker rmi ${app.imageName()}:${env.BUILD_NUMBER}"
             sh "docker rmi ${app.imageName()}:latest"
         }
+        sh "docker rmi ${app.imageName()}:${env.BUILD_NUMBER}"
+        sh "docker rmi ${app.imageName()}:latest"
     }
 }
